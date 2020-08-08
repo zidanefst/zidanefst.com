@@ -1,0 +1,221 @@
+@media only screen and (max-width: 1024px){
+
+    h2{
+        padding: 30px;
+        font-size: 2em;
+    }
+
+    /* navbar */
+
+    #navbar{
+        background-color: rgba(255,255,255,0.9);
+    }
+
+    #menu{
+        display: none;
+    }
+
+
+    #menuham{
+        padding: 10px;
+        display: block;
+        .logo{
+            float: none;
+            margin: 0 auto;
+        }
+
+        input:checked ~ ul{ /*afeta o irmão (que está no mesmo nível numa div) do input*/
+            display: block;
+        }
+
+        input:checked ~ img{ /*afeta o irmão (que está no mesmo nível numa div) do input*/
+            opacity: 0;
+        }
+    }
+
+    /* header */
+
+    #header{
+        .animation{
+            width: auto;
+        }
+    
+        svg{    
+            text{
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* about */
+
+    #about{
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: auto;
+            margin: 0 auto;
+
+            img{
+                border: 5px solid #fff;
+                border-radius: 25px;
+                margin: 50px auto;
+                height: 250px;
+            }
+        }
+
+        p{
+            width: 80%;
+            margin: 0 auto;
+            padding: 0px 0px 50px 0px;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    /* experience */
+
+    #experience{
+    
+        .grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            
+            .container{
+                width: auto;
+    
+                .grid{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: auto auto;
+                    width: 90%;
+                }
+    
+                .position, .company{
+                    text-align: left;
+                }
+    
+                .date, .location{
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    /* skills */
+
+    #skills{
+
+        .skill-type{
+            width: 70%;
+            padding: 40px;
+    
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr;
+
+                img{
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    /* projects */
+
+    #projects{
+        .grid{
+            grid-template-columns: 1fr;
+            width: 90%;
+        }
+    }
+
+    /* education */
+
+    #education{
+        .grid{
+            grid-template-columns: 1fr;
+            width: 80%;
+            gap: 50px;
+            
+            .container{
+                width: auto;
+            }
+        }
+    }
+
+    
+
+    #copyright p{
+
+        br{
+            display: block;
+        }
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 768px){
+
+    /* experience */
+
+    #experience{
+    
+        .grid{
+            width: 90%;
+        }
+    }
+
+    /* skills */
+
+    #skills{
+
+        .skill-type{
+            width: 80%;
+        }
+    }
+
+    /* projects */
+
+    #projects{
+
+        .grid{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    /* education */
+
+    #education{
+        .grid{
+            width: 90%;
+            gap: 50px;
+            
+            .container{
+                width: auto;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 480px){ 
+        
+    .title, .sub, .position, .date, .company, .location{
+        text-align: center;
+    }
+    
+    /* skills */
+
+    #skills{
+
+        .skill-type{
+            width: 65%;
+    
+            .grid{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

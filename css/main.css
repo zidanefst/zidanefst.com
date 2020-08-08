@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.97);
+  background-image: url(../img/bgpattern.png);
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  background-color: #21255c;
+  color: white;
+  padding: 30px;
+  font-size: 3em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* loader */
+/* #stop-scrolling {
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999999;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+*/
+/* navbar */
+#navbar {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#navbar .logo {
+  text-align: center;
+  margin: auto;
+}
+
+#navbar .logo img {
+  animation: initial-spin 0.5s backwards;
+  transition: 400ms ease-out;
+  width: 100px;
+}
+
+@keyframes initial-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#navbar .logo img:hover {
+  transform: scale(1.3) rotate(360deg);
+}
+
+#navbar .menuitem {
+  font-size: 18px;
+  text-align: center;
+  padding: 35px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#navbar .menuitem a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-bottom: solid 0px #000;
+  transition: 100ms linear;
+}
+
+#navbar .menuitem a:hover {
+  font-size: 1.1em;
+  border-width: 2px;
+}
+
+#menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+/*Menu Ham*/
+#menuham {
+  display: none;
+  margin: 0 auto;
+}
+#menuham .icon {
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+#menuham ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  padding-top: 15px;
+  /*padding-top: 100px;*/
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#menuham ul li .menuitem {
+  padding: 0px;
+  height: 15vh;
+}
+#menuham ul li .menuitem a {
+  font-size: 1.5em;
+  clear: both;
+  float: none;
+  display: block;
+  color: #fff;
+}
+#menuham input {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+}
+#menuham .menuhamicon {
+  display: block;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+#menuham .menuhamcross {
+  display: block;
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0 auto;
+  background-image: url("../img/headerbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+#header .animation {
+  margin: 0 auto;
+  width: 900px;
+}
+#header svg {
+  margin-top: 40vh;
+  font-weight: bold;
+  width: 100%;
+}
+#header svg text {
+  font-size: 16px;
+}
+#header h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0px;
+}
+
+/* about */
+#about {
+  /* background-color: rgb(222,232,235); */
+}
+#about .grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 75%;
+  margin: 0 auto;
+}
+#about .grid img {
+  border: 5px solid #fff;
+  border-radius: 25px;
+  margin: 50px auto;
+  height: 250px;
+}
+#about p {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 28px;
+}
+
+/* experience */
+#experience {
+  color: #000;
+}
+#experience .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 60%;
+  margin: 100px auto;
+  gap: 50px;
+}
+#experience .grid .container {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+}
+#experience .grid .container .grid {
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  margin: 25px;
+  margin-top: 0px;
+  gap: 15px;
+}
+#experience .grid .container .position {
+  font-size: 1.3em;
+}
+#experience .grid .container .position, #experience .grid .container .company {
+  text-align: left;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+#experience .grid .container .date, #experience .grid .container .location {
+  text-align: right;
+  font-size: 16px;
+}
+
+/* skills */
+#skills .skill-type {
+  background-color: #fff;
+  color: #000;
+  width: 60%;
+  margin: 50px auto;
+  padding: 40px 25px;
+}
+#skills .skill-type .title {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+#skills .skill-type .grid {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+#skills .skill-type .grid img {
+  display: flex;
+  height: 100px;
+  margin: auto;
+}
+#skills .skill-type .grid img:hover {
+  transition: 100ms linear;
+  transform: scale(1.1);
+}
+#skills .skill-type .grid p {
+  margin-top: 25px;
+  font-size: 1.1em;
+  text-align: center;
+}
+#skills .skill-type:last-of-type {
+  margin-bottom: 110px;
+}
+
+/* projects */
+#projects {
+  color: #000;
+}
+#projects .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  width: 80%;
+  margin: 100px auto;
+}
+#projects .grid .container {
+  background-color: #fff;
+}
+#projects .grid .container .project-image {
+  background-color: #d4d4d4;
+  height: 240px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#projects .grid .container .project-image:hover {
+  overflow: visible;
+}
+#projects .grid .container .project-image:hover img {
+  transition: 100ms linear;
+  transform: scale(1.1);
+}
+#projects .grid .container .project-image img {
+  display: flex;
+}
+#projects .grid .container .project-desc {
+  padding: 25px;
+}
+#projects .grid .container .project-desc .project-title {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#projects .grid .container .project-desc a {
+  margin: 10px auto;
+  color: black;
+  text-decoration: underline;
+}
+#projects .grid .container .project-desc a i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+#projects .grid .container .project-desc a:hover {
+  transition: 100ms linear;
+  font-size: 1.2em;
+}
+#projects .grid .container .project-desc a:hover i {
+  transform: scale(1.2);
+}
+
+/* education */
+#education {
+  color: #000;
+}
+#education .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 100px auto;
+  gap: 100px;
+}
+#education .grid .container {
+  width: 100%;
+  background-color: #fff;
+  padding: 40px;
+}
+#education .grid .container .title {
+  font-weight: bolder;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+#education .grid .container .sub {
+  font-size: 16px;
+}
+#education .grid .container p {
+  margin: 4px auto;
+}
+
+/* contact */
+#contact #social {
+  width: 230px;
+  margin: 50px auto 100px auto;
+}
+#contact #social .socialmedia a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#contact #social .socialmedia a:hover {
+  transition: 100ms linear;
+  font-size: 1.1em;
+}
+#contact #social .socialmedia a:hover i {
+  transition: 250ms linear;
+  transform: scale(1.3);
+}
+#contact #social .socialmedia a:hover .fa-behance {
+  transition: 100ms linear;
+  color: #1769ff;
+}
+#contact #social .socialmedia a:hover .fa-linkedin {
+  transition: 100ms linear;
+  color: #0077b5;
+}
+#contact #social .socialmedia a:hover .fa-instagram {
+  transition: 100ms linear;
+  color: #dd2a7b;
+}
+#contact #social .socialmedia i {
+  font-size: 36px;
+  padding: 24px;
+}
+
+/*footer*/
+#footerdivider {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 16fr 1fr 16fr;
+}
+
+#footerdivider .line {
+  height: 0;
+  border: 1px solid #C4C4C4;
+  display: inline-block;
+}
+
+#footerdivider img {
+  padding: 0px 20px;
+  margin-top: -35px;
+  width: 75px;
+  filter: invert(100%);
+}
+#footerdivider img:hover {
+  transition: 250ms linear;
+  transform: scale(1.3) rotate(360deg);
+}
+
+#footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#copyright {
+  padding: 25px;
+  padding-bottom: 50px;
+}
+
+#copyright p {
+  text-align: center;
+  margin: 10px auto;
+}
+#copyright p br {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
