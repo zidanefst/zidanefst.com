@@ -9,6 +9,16 @@
 
     #navbar{
         background-color: rgba(255,255,255,0.9);
+
+        .menuitem a{
+            border-bottom: solid 0px #fff;
+            transition: 100ms linear;
+            
+            &:hover{
+            font-size: 1.6em;
+            border-width: 2px;
+            }
+        }
     }
 
     #menu{
@@ -52,16 +62,13 @@
     #about{
 
         .grid{
-            display: grid;
             grid-template-columns: 1fr;
             width: auto;
             margin: 0 auto;
 
             img{
                 border: 5px solid #fff;
-                border-radius: 25px;
-                margin: 50px auto;
-                height: 250px;
+                height: 175px;
             }
         }
 
