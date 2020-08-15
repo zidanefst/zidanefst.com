@@ -15,7 +15,7 @@ body {
 h2 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  background-color: #21255c;
+  background-color: #1f1f1f;
   color: white;
   padding: 30px;
   font-size: 3em;
@@ -213,7 +213,7 @@ a {
 }
 #about .grid img {
   border: 5px solid #fff;
-  border-radius: 25px;
+  border-radius: 50%;
   margin: 50px auto;
   height: 250px;
 }
@@ -385,7 +385,7 @@ a {
 
 /* contact */
 #contact #social {
-  width: 230px;
+  width: 250px;
   margin: 50px auto 100px auto;
 }
 #contact #social .socialmedia a {

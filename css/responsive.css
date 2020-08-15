@@ -9,6 +9,14 @@
   #navbar {
     background-color: rgba(255, 255, 255, 0.9);
   }
+  #navbar .menuitem a {
+    border-bottom: solid 0px #fff;
+    transition: 100ms linear;
+  }
+  #navbar .menuitem a:hover {
+    font-size: 1.6em;
+    border-width: 2px;
+  }
 
   #menu {
     display: none;
@@ -41,16 +49,13 @@
 
   /* about */
   #about .grid {
-    display: grid;
     grid-template-columns: 1fr;
     width: auto;
     margin: 0 auto;
   }
   #about .grid img {
     border: 5px solid #fff;
-    border-radius: 25px;
-    margin: 50px auto;
-    height: 250px;
+    height: 175px;
   }
   #about p {
     width: 80%;
