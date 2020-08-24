@@ -328,7 +328,9 @@ a {
   transform: scale(1.1);
 }
 #projects .grid .container .project-image img {
+  transition: 100ms linear;
   display: flex;
+  height: 250px;
 }
 #projects .grid .container .project-desc {
   padding: 25px;
@@ -342,6 +344,7 @@ a {
   margin: 10px auto;
   color: black;
   text-decoration: underline;
+  transition: 100ms linear;
 }
 #projects .grid .container .project-desc a i {
   font-size: 18px;
@@ -392,6 +395,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: left;
+  transition: 100ms linear;
 }
 #contact #social .socialmedia a:hover {
   transition: 100ms linear;
@@ -437,6 +441,7 @@ a {
   margin-top: -35px;
   width: 75px;
   filter: invert(100%);
+  transition: 250ms linear;
 }
 #footerdivider img:hover {
   transition: 250ms linear;

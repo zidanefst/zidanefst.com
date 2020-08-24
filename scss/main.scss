@@ -324,9 +324,9 @@ a{
                 display: flex;
                 height: 100px;
                 margin: auto;
-                transition: 100ms linear;
 
                 &:hover{
+                    transition: 100ms linear;
                     transform: scale(1.1);
                 }
             }
@@ -375,6 +375,7 @@ a{
                     overflow: visible;
 
                     img{
+                        transition: 100ms linear;
                         transform: scale(1.1);
                     }
                 }
@@ -399,6 +400,7 @@ a{
                     margin: 10px auto;
                     color: black;
                     text-decoration: underline;
+                    transition: 100ms linear;
 
                     i{
                         font-size: 18px;
@@ -474,6 +476,7 @@ a{
                 display: flex;
                 align-items: center;
                 justify-content: left;
+                transition: 100ms linear;
 
                 &:hover{   
                     transition: 100ms linear;
@@ -532,6 +535,7 @@ a{
     margin-top: -35px;
     width: 75px;
     filter: invert(100%);
+    transition: 250ms linear;
 
     &:hover{
         transition: 250ms linear;
