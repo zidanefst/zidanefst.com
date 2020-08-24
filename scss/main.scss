@@ -324,9 +324,9 @@ a{
                 display: flex;
                 height: 100px;
                 margin: auto;
+                transition: 100ms linear;
 
                 &:hover{
-                    transition: 100ms linear;
                     transform: scale(1.1);
                 }
             }
@@ -375,12 +375,12 @@ a{
                     overflow: visible;
 
                     img{
-                        transition: 100ms linear;
                         transform: scale(1.1);
                     }
                 }
 
                 img{
+                    transition: 100ms linear;
                     display: flex;
                     height: 250px;
                 }
