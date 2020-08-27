@@ -1,0 +1,115 @@
+@media only screen and (max-width: 768px){
+
+    .title{
+        font-size: 36px;
+    }
+
+    #header .cta{
+        position: absolute;
+        right: 3%;
+        top: 30%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0);
+        padding: 35px;
+        border-radius: 10px;
+    }
+
+    .second{
+        margin-top: 125px;
+    }
+
+    #process .icons img{
+        width: 40%;
+    }
+
+    #header .getstarted{
+        width: 25%;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .getstarted{
+        width: 40%;
+    }
+
+    #form{
+        top: 250px;
+        left: 15%;
+        margin: auto;
+        width: 60vw;
+        height: 400px;
+    }
+
+    #form .title{
+        font-size: 28px;
+    }
+
+    #form button{
+        margin: 40px auto;
+    }
+
+    .slide img{
+        height: 200px;
+    }
+
+    #subscribe input{
+        padding-right: 20px;
+    }
+
+    #footerdivider{
+        margin-top: 75px;
+    }
+
+    #testimonials{
+        display: none;
+    }
+
+    .cta .title{
+        font-size: 28px;
+    }
+
+    /* forstylists.php */
+
+    #forstylistsheader{
+        height: 675px;
+    }
+
+    #forstylistsheader .image{
+        padding: 0px;
+        padding-top: 125px;
+    }
+
+    #forstylistsheader .image img{
+        height: 25vh;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    #whyusests .grid{
+        grid-template-columns: 1fr;
+    }
+
+    #testimonialsfs{
+        height: 625px;
+        margin-top: -75px;
+    }
+
+    #testimonialsfs .slide img{
+        height: 150px;
+    }
+
+    #testimonialsfs .slide p{
+        font-size: 24px;
+    }
+
+    /* contactus.php */
+    #contactusform{
+        height: 700px;
+    }
+
+    #contactusform textarea{
+        resize: none;
+        height: 15em;
+        width: 99%;
+    }
+}
