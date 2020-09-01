@@ -485,5 +485,8 @@ a {
 #ongoing a {
   text-decoration: underline;
 }
+#ongoing a i {
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=main.css.map */
