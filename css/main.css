@@ -466,4 +466,24 @@ a {
   display: none;
 }
 
+/* ongoing.html */
+#ongoing {
+  background-image: url(../img/ongoingbg.png);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#ongoing h2 {
+  background-color: rgba(0, 0, 0, 0);
+}
+#ongoing h3, #ongoing h4 {
+  font-weight: normal;
+}
+#ongoing a {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
