@@ -39,6 +39,7 @@
 
   #about img {
     width: 100%;
+    height: auto;
   }
 
   /* store */
@@ -60,8 +61,8 @@
     gap: 0px;
   }
   #videos .videos .videos-mostviewed iframe,
-#videos .videos .videos-mostrecent iframe,
-#videos .videos .videos-best iframe {
+  #videos .videos .videos-mostrecent iframe,
+  #videos .videos .videos-best iframe {
     width: 90%;
     height: 300px;
   }
