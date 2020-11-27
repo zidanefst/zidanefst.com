@@ -79,10 +79,12 @@
     grid-template-rows: auto auto;
     width: 90%;
   }
-  #experience .grid .container .position, #experience .grid .container .company {
+  #experience .grid .container .position,
+#experience .grid .container .company {
     text-align: left;
   }
-  #experience .grid .container .date, #experience .grid .container .location {
+  #experience .grid .container .date,
+#experience .grid .container .location {
     text-align: left;
   }
 
@@ -98,8 +100,8 @@
     height: 75px;
   }
 
-  /* projects */
-  #projects .grid {
+  /* portfolio */
+  #portfolio .grid {
     grid-template-columns: 1fr;
     width: 90%;
   }
@@ -129,8 +131,8 @@
     width: 80%;
   }
 
-  /* projects */
-  #projects .grid {
+  /* portfolio */
+  #portfolio .grid {
     grid-template-columns: 1fr;
   }
 
@@ -144,7 +146,12 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .title, .sub, .position, .date, .company, .location {
+  .title,
+.sub,
+.position,
+.date,
+.company,
+.location {
     text-align: center;
   }
 
