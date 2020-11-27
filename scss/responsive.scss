@@ -1,229 +1,220 @@
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
+  h2 {
+    padding: 30px;
+    font-size: 2em;
+  }
 
-    h2{
-        padding: 30px;
-        font-size: 2em;
+  /* navbar */
+
+  #navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 75px;
+
+    .menuitem a {
+      border-bottom: solid 0px #fff;
+      transition: 100ms linear;
+
+      &:hover {
+        font-size: 1.6em;
+        border-width: 2px;
+      }
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menuham {
+    padding: 10px;
+    display: block;
+    .logo {
+      float: none;
+      margin: 0 auto;
     }
 
-    /* navbar */
-
-    #navbar{
-        background-color: rgba(255,255,255,0.9);
-        height: 75px;
-
-        .menuitem a{
-            border-bottom: solid 0px #fff;
-            transition: 100ms linear;
-            
-            &:hover{
-            font-size: 1.6em;
-            border-width: 2px;
-            }
-        }
+    input:checked ~ ul {
+      /*afeta o irmão (que está no mesmo nível numa div) do input*/
+      display: block;
     }
 
-    #menu{
-        display: none;
+    input:checked ~ img {
+      /*afeta o irmão (que está no mesmo nível numa div) do input*/
+      opacity: 0;
+    }
+  }
+
+  /* header */
+
+  #header {
+    .animation {
+      width: auto;
     }
 
+    svg {
+      text {
+        font-size: 16px;
+      }
+    }
+  }
 
-    #menuham{
-        padding: 10px;
-        display: block;
-        .logo{
-            float: none;
-            margin: 0 auto;
-        }
+  /* about */
 
-        input:checked ~ ul{ /*afeta o irmão (que está no mesmo nível numa div) do input*/
-            display: block;
-        }
+  #about {
+    .grid {
+      grid-template-columns: 1fr;
+      width: auto;
+      margin: 0 auto;
 
-        input:checked ~ img{ /*afeta o irmão (que está no mesmo nível numa div) do input*/
-            opacity: 0;
-        }
+      img {
+        border: 5px solid #fff;
+        height: 175px;
+      }
     }
 
-    /* header */
-
-    #header{
-        .animation{
-            width: auto;
-        }
-    
-        svg{    
-            text{
-                font-size: 16px;
-            }
-        }
+    p {
+      width: 80%;
+      margin: 0 auto;
+      padding: 0px 0px 50px 0px;
+      text-align: center;
+      font-size: 24px;
     }
+  }
 
-    /* about */
+  /* experience */
 
-    #about{
+  #experience {
+    .grid {
+      grid-template-columns: 1fr;
+      width: 80%;
 
-        .grid{
-            grid-template-columns: 1fr;
-            width: auto;
-            margin: 0 auto;
+      .container {
+        width: auto;
 
-            img{
-                border: 5px solid #fff;
-                height: 175px;
-            }
+        .grid {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto auto;
+          width: 90%;
         }
 
-        p{
-            width: 80%;
-            margin: 0 auto;
-            padding: 0px 0px 50px 0px;
-            text-align: center;
-            font-size: 24px;
+        .position,
+        .company {
+          text-align: left;
         }
+
+        .date,
+        .location {
+          text-align: left;
+        }
+      }
     }
+  }
 
-    /* experience */
+  /* skills */
 
-    #experience{
-    
-        .grid{
-            grid-template-columns: 1fr;
-            width: 80%;
-            
-            .container{
-                width: auto;
-    
-                .grid{
-                    grid-template-columns: 1fr;
-                    grid-template-rows: auto auto;
-                    width: 90%;
-                }
-    
-                .position, .company{
-                    text-align: left;
-                }
-    
-                .date, .location{
-                    text-align: left;
-                }
-            }
+  #skills {
+    .skill-type {
+      width: 70%;
+      padding: 40px;
+
+      .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img {
+          height: 75px;
         }
+      }
     }
+  }
 
-    /* skills */
+  /* portfolio */
 
-    #skills{
-
-        .skill-type{
-            width: 70%;
-            padding: 40px;
-    
-            .grid{
-                grid-template-columns: 1fr 1fr 1fr;
-
-                img{
-                    height: 75px;
-                }
-            }
-        }
+  #portfolio {
+    .grid {
+      grid-template-columns: 1fr;
+      width: 90%;
     }
+  }
 
-    /* projects */
+  /* education */
 
-    #projects{
-        .grid{
-            grid-template-columns: 1fr;
-            width: 90%;
-        }
+  #education {
+    .grid {
+      grid-template-columns: 1fr;
+      width: 80%;
+      gap: 50px;
+
+      .container {
+        width: auto;
+      }
     }
+  }
 
-    /* education */
-
-    #education{
-        .grid{
-            grid-template-columns: 1fr;
-            width: 80%;
-            gap: 50px;
-            
-            .container{
-                width: auto;
-            }
-        }
+  #copyright p {
+    br {
+      display: block;
     }
-
-    
-
-    #copyright p{
-
-        br{
-            display: block;
-        }
-    }
-
-    
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  /* experience */
 
-@media only screen and (max-width: 768px){
-
-    /* experience */
-
-    #experience{
-    
-        .grid{
-            width: 90%;
-        }
+  #experience {
+    .grid {
+      width: 90%;
     }
+  }
 
-    /* skills */
+  /* skills */
 
-    #skills{
-
-        .skill-type{
-            width: 80%;
-        }
+  #skills {
+    .skill-type {
+      width: 80%;
     }
+  }
 
-    /* projects */
+  /* portfolio */
 
-    #projects{
-
-        .grid{
-            grid-template-columns: 1fr;
-        }
+  #portfolio {
+    .grid {
+      grid-template-columns: 1fr;
     }
+  }
 
-    /* education */
+  /* education */
 
-    #education{
-        .grid{
-            width: 90%;
-            gap: 50px;
-            
-            .container{
-                width: auto;
-            }
-        }
+  #education {
+    .grid {
+      width: 90%;
+      gap: 50px;
+
+      .container {
+        width: auto;
+      }
     }
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  .title,
+  .sub,
+  .position,
+  .date,
+  .company,
+  .location {
+    text-align: center;
+  }
 
-@media only screen and (max-width: 480px){ 
-        
-    .title, .sub, .position, .date, .company, .location{
-        text-align: center;
+  /* skills */
+
+  #skills {
+    .skill-type {
+      width: 65%;
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
-    
-    /* skills */
-
-    #skills{
-
-        .skill-type{
-            width: 65%;
-    
-            .grid{
-                grid-template-columns: 1fr;
-            }
-        }
-    }
+  }
 }

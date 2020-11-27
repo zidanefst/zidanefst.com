@@ -75,7 +75,8 @@ button:hover > a {
   color: #000;
   transition: color 500ms linear;
 }
-button::before, button::after {
+button::before,
+button::after {
   background: #fff;
   content: "";
   position: absolute;
@@ -160,7 +161,8 @@ button::before, button::after {
   transition: background 0.2s ease-out;
   width: 18px;
 }
-.navbar .menu-icon .navicon:before, .navbar .menu-icon .navicon:after {
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
   background: #eee;
   content: "";
   display: block;
@@ -190,7 +192,8 @@ button::before, button::after {
 .navbar .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
-.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -274,7 +277,7 @@ button::before, button::after {
 /* videos */
 #videos .filters {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 #videos .filters .filter {

@@ -312,7 +312,7 @@ button {
 #videos {
   .filters {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     .filter {
       background-color: rgba(0, 0, 0, 0.2);

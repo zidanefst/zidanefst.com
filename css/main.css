@@ -250,12 +250,14 @@ a {
 #experience .grid .container .position {
   font-size: 1.3em;
 }
-#experience .grid .container .position, #experience .grid .container .company {
+#experience .grid .container .position,
+#experience .grid .container .company {
   text-align: left;
   font-weight: bolder;
   text-transform: uppercase;
 }
-#experience .grid .container .date, #experience .grid .container .location {
+#experience .grid .container .date,
+#experience .grid .container .location {
   text-align: right;
   font-size: 16px;
 }
@@ -296,21 +298,21 @@ a {
   margin-bottom: 110px;
 }
 
-/* projects */
-#projects {
+/* portfolio */
+#portfolio {
   color: #000;
 }
-#projects .grid {
+#portfolio .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   width: 80%;
   margin: 100px auto;
 }
-#projects .grid .container {
+#portfolio .grid .container {
   background-color: #fff;
 }
-#projects .grid .container .project-image {
+#portfolio .grid .container .portfolio-image {
   background-color: #d4d4d4;
   height: 240px;
   width: 100%;
@@ -319,41 +321,41 @@ a {
   justify-content: center;
   align-items: flex-start;
 }
-#projects .grid .container .project-image:hover {
+#portfolio .grid .container .portfolio-image:hover {
   overflow: visible;
 }
-#projects .grid .container .project-image:hover img {
+#portfolio .grid .container .portfolio-image:hover img {
   transition: 100ms linear;
   transform: scale(1.1);
 }
-#projects .grid .container .project-image img {
+#portfolio .grid .container .portfolio-image img {
   transition: 100ms linear;
   display: flex;
   height: 250px;
 }
-#projects .grid .container .project-desc {
+#portfolio .grid .container .portfolio-desc {
   padding: 25px;
 }
-#projects .grid .container .project-desc .project-title {
+#portfolio .grid .container .portfolio-desc .portfolio-title {
   margin-bottom: 15px;
   font-size: 1.3em;
   font-weight: bold;
 }
-#projects .grid .container .project-desc a {
+#portfolio .grid .container .portfolio-desc a {
   margin: 10px auto;
   color: black;
   text-decoration: underline;
   transition: 100ms linear;
 }
-#projects .grid .container .project-desc a i {
+#portfolio .grid .container .portfolio-desc a i {
   font-size: 18px;
   padding-right: 10px;
 }
-#projects .grid .container .project-desc a:hover {
+#portfolio .grid .container .portfolio-desc a:hover {
   transition: 100ms linear;
   font-size: 1.2em;
 }
-#projects .grid .container .project-desc a:hover i {
+#portfolio .grid .container .portfolio-desc a:hover i {
   transform: scale(1.2);
 }
 
@@ -431,7 +433,7 @@ a {
 
 #footerdivider .line {
   height: 0;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   display: inline-block;
 }
 
@@ -478,7 +480,8 @@ a {
 #ongoing h2 {
   background-color: rgba(0, 0, 0, 0);
 }
-#ongoing h3, #ongoing h4 {
+#ongoing h3,
+#ongoing h4 {
   font-weight: normal;
 }
 #ongoing a {
