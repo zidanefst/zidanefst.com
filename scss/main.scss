@@ -58,17 +58,18 @@ a {
   height: 100px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-}
-
-#navbar .logo {
-  text-align: center;
-  margin: auto;
-}
-
-#navbar .logo img {
-  animation: initial-spin 0.5s backwards;
-  transition: 400ms ease-out;
-  width: 100px;
+  .logo {
+    text-align: center;
+    margin: auto;
+    img {
+      animation: initial-spin 0.5s backwards;
+      transition: 400ms ease-out;
+      width: 100px;
+      &:hover {
+        transform: scale(1.3) rotate(360deg);
+      }
+    }
+  }
 }
 
 @keyframes initial-spin {
@@ -80,37 +81,30 @@ a {
   }
 }
 
-#navbar .logo img:hover {
-  transform: scale(1.3) rotate(360deg);
-}
-
-#navbar .menuitem {
-  font-size: 18px;
-  text-align: center;
-  padding: 35px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-#navbar .menuitem a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-bottom: solid 0px #000;
-  transition: 100ms linear;
-}
-
-#navbar .menuitem a:hover {
-  font-size: 1.1em;
-  border-width: 2px;
-}
-
 #menu {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 60%;
+  .menuitem {
+    font-size: 18px;
+    text-align: center;
+    padding: 35px;
+    display: inline-block;
+    margin: 0 auto;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      border-bottom: solid 0px #000;
+      transition: 100ms linear;
+      &:hover {
+        font-size: 1.1em;
+        border-width: 2px;
+      }
+    }
+  }
 }
 
 /*Menu Ham*/
