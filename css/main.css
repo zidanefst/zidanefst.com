@@ -278,9 +278,9 @@ a {
   display: flex;
   height: 100px;
   margin: auto;
+  transition: all 100ms linear;
 }
 #skills .skill-type .grid img:hover {
-  transition: 100ms linear;
   transform: scale(1.1);
 }
 #skills .skill-type .grid p {

@@ -306,9 +306,9 @@ a {
         display: flex;
         height: 100px;
         margin: auto;
+        transition: all 100ms linear;
 
         &:hover {
-          transition: 100ms linear;
           transform: scale(1.1);
         }
       }
