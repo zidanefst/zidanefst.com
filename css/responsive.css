@@ -5,6 +5,11 @@
     font-size: 2em;
   }
 
+  /* github */
+  #github .github {
+    width: 175px;
+  }
+
   /* navbar */
   #navbar {
     background-color: rgba(255, 255, 255, 0.9);
@@ -153,6 +158,11 @@
 .company,
 .location {
     text-align: center;
+  }
+
+  /* github */
+  #github {
+    display: none;
   }
 
   /* skills */

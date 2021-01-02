@@ -70,6 +70,44 @@ a {
     background-position: center;
 }
 */
+/* github */
+#github .github {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  right: -500px;
+  top: 25%;
+  padding: 25px;
+  width: 260px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  transition: all 100ms linear;
+}
+#github .github p {
+  display: flex;
+  align-items: center;
+}
+#github .github p i {
+  font-size: 2em;
+  margin-left: 10px;
+}
+#github .github:hover {
+  transform: scale(1.05);
+}
+
+@-webkit-keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
 /* navbar */
 #navbar {
   z-index: 9999;
@@ -417,11 +455,9 @@ a {
   transition: 100ms linear;
 }
 #contact #social .socialmedia a:hover {
-  transition: 100ms linear;
   font-size: 1.1em;
 }
 #contact #social .socialmedia a:hover i {
-  transition: 250ms linear;
   transform: scale(1.3);
 }
 #contact #social .socialmedia a:hover .fa-behance {
@@ -439,6 +475,7 @@ a {
 #contact #social .socialmedia i {
   font-size: 36px;
   padding: 24px;
+  transition: 100ms linear;
 }
 
 /*footer*/

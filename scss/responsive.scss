@@ -4,6 +4,13 @@
     font-size: 2em;
   }
 
+  /* github */
+  #github {
+    .github {
+      width: 175px;
+    }
+  }
+
   /* navbar */
 
   #navbar {
@@ -204,6 +211,11 @@
   .company,
   .location {
     text-align: center;
+  }
+
+  /* github */
+  #github {
+    display: none;
   }
 
   /* skills */
