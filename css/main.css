@@ -87,20 +87,20 @@ a {
   transition: all 100ms linear;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 #github .fa-times {
   margin-right: 10px;
   font-size: 1.5em;
+  cursor: pointer;
 }
 #github .fa-times:hover {
   color: #ddd;
 }
-#github p {
+#github a {
   display: flex;
   align-items: center;
 }
-#github p i {
+#github a i {
   font-size: 2em;
   margin-left: 10px;
 }

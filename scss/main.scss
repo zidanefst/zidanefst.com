@@ -91,15 +91,15 @@ a {
   transition: all 100ms linear;
   display: flex;
   align-items: center;
-  cursor: pointer;
   .fa-times {
     margin-right: 10px;
     font-size: 1.5em;
+    cursor: pointer;
     &:hover {
       color: #ddd;
     }
   }
-  p {
+  a {
     display: flex;
     align-items: center;
     i {
