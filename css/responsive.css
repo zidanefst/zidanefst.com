@@ -7,7 +7,7 @@
 
   /* github */
   #github {
-    width: 175px;
+    display: none;
   }
 
   /* navbar */
@@ -158,11 +158,6 @@
 .company,
 .location {
     text-align: center;
-  }
-
-  /* github */
-  #github {
-    display: none;
   }
 
   /* skills */
