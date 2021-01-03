@@ -71,30 +71,40 @@ a {
 }
 */
 /* github */
-#github .github {
+#github {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
   right: -500px;
   top: 25%;
   padding: 25px;
-  width: 260px;
+  width: 300px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
+  /* -webkit-animation-delay: 2s; */
   animation: slide 0.5s forwards;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
   transition: all 100ms linear;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
-#github .github p {
+#github .fa-times {
+  margin-right: 10px;
+  font-size: 2em;
+}
+#github .fa-times:hover {
+  color: #ddd;
+}
+#github p {
   display: flex;
   align-items: center;
 }
-#github .github p i {
+#github p i {
   font-size: 2em;
   margin-left: 10px;
 }
-#github .github:hover {
+#github:hover {
   transform: scale(1.05);
 }
 

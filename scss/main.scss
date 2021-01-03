@@ -76,31 +76,39 @@ a {
 /* github */
 
 #github {
-  .github {
-    background-color: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    right: -500px;
-    top: 25%;
-    padding: 25px;
-    width: 260px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
-    transition: all 100ms linear;
-    p {
-      display: flex;
-      align-items: center;
-      i {
-        font-size: 2em;
-        margin-left: 10px;
-      }
-    }
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  right: -500px;
+  top: 25%;
+  padding: 25px;
+  width: 300px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -webkit-animation: slide 0.5s forwards;
+  /* -webkit-animation-delay: 2s; */
+  animation: slide 0.5s forwards;
+  /* animation-delay: 2s; */
+  transition: all 100ms linear;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .fa-times {
+    margin-right: 10px;
+    font-size: 2em;
     &:hover {
-      transform: scale(1.05);
+      color: #ddd;
     }
+  }
+  p {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 2em;
+      margin-left: 10px;
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
   }
 }
 

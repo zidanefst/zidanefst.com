@@ -10,26 +10,30 @@ jQuery(window).on('load', function () {
     })(jQuery);
 }); */
 
+//Button Send Message
+
+//Success
+/* $('button').click(function() {
+  $(this).toggleClass('success');
+  $('button p').text(function(i, text) {
+    return text === "Email Me" ? "Email Me" : "Email Me";
+  });
+}); */
+
+//Error
+/* $('button').click(function() {
+  $(this).toggleClass('error');
+  $('button p').text(function(i, text) {
+    return text === "Try again!" ? "Send" : "Try again!";
+  });
+}); */
+
 $('a[href*=\\#]').on('click', function(event){     
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top-100}, 500);
 });
 
-
-//Button Send Message
-
-//Success
-$('button').click(function() {
-    $(this).toggleClass('success');
-    $('button p').text(function(i, text) {
-      return text === "Email Me" ? "Email Me" : "Email Me";
-    });
-  });
-
-//Error
-/* $('button').click(function() {
-    $(this).toggleClass('error');
-    $('button p').text(function(i, text) {
-      return text === "Try again!" ? "Send" : "Try again!";
-    });
-  }); */
+/* github hide and show pop-up */
+$('.fa-times').on('click', function(){     
+  $('#github').fadeOut();
+});
