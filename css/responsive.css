@@ -150,14 +150,19 @@
     width: auto;
   }
 }
-@media only screen and (max-width: 480px) {
-  .title,
-.sub,
-.position,
-.date,
-.company,
-.location {
-    text-align: center;
+@media only screen and (max-width: 540px) {
+  /* experience */
+  #experience .grid .container .grid {
+    margin-left: 0px;
+  }
+
+  #experience .grid .container ul {
+    padding-inline-start: 20px;
+  }
+
+  /* education */
+  #education .grid .container ul {
+    padding-inline-start: 20px;
   }
 
   /* skills */
