@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -12,8 +12,9 @@ html {
 body {
   background-color: rgba(0, 0, 0, 0.97);
   background-image: url(../img/bgpattern.png);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: normal;
+  font-size: 1.1em;
   color: white;
 }
 
@@ -292,10 +293,9 @@ a {
 
   .grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr;
     width: 75%;
-    margin: 0 auto;
-
+    margin: 75px auto;
     img {
       border: 5px solid #fff;
       border-radius: 50%;
@@ -303,12 +303,11 @@ a {
       height: 250px;
     }
   }
-
   p {
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
