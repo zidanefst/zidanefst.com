@@ -6,14 +6,14 @@
 
   /* github */
   #github {
-    display: none;
-    width: auto;
+    span {
+      display: none;
+    }
   }
 
   /* navbar */
 
   #navbar {
-    background-color: rgba(255, 255, 255, 0.9);
     height: 75px;
 
     .menuitem a {
@@ -202,6 +202,11 @@
 }
 
 @media only screen and (max-width: 540px) {
+  /* github */
+  #github {
+    padding: 15px;
+  }
+
   /* experience */
   #experience .grid .container .grid {
     margin-left: 0px;

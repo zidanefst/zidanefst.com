@@ -82,14 +82,9 @@ a {
   right: -500px;
   top: 25%;
   padding: 25px;
-  width: 300px;
+  width: auto;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  /*   -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-  transition: all 100ms linear; */
   display: flex;
   align-items: center;
   z-index: 99;
