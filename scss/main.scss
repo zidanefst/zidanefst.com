@@ -134,7 +134,7 @@ a {
   top: 0;
   height: 100px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 100ms linear;
   .logo {
     text-align: center;
     margin: auto;
@@ -147,6 +147,11 @@ a {
       }
     }
   }
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: all 100ms linear;
 }
 
 @keyframes initial-spin {
@@ -185,6 +190,7 @@ a {
 }
 
 /*Menu Ham*/
+
 #menuham {
   display: none;
   margin: 0 auto;

@@ -37,3 +37,15 @@ $('a[href*=\\#]').on('click', function(event){
 $('.fa-times').on('click', function(){     
   $('#github').fadeOut();
 });
+
+/* add bg-color to navbar on scroll */
+$(function() {
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 50) {
+        $("#navbar").addClass("scrolled");
+      } else {
+        $("#navbar").removeClass("scrolled");
+      }
+  });
+});
