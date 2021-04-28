@@ -38,14 +38,24 @@ $('.fa-times').on('click', function(){
   $('#github').fadeOut();
 });
 
+/* adding a scroll function for github pop-up */
+$(function() {
+  $(window).scroll(function() {    
+      var scroll = $(window).scrollTop();
+      if (scroll >= 500) {
+        $('#github').addClass("github-scrolled");
+      }
+  });
+});
+
 /* add bg-color to navbar on scroll */
 $(function() {
   $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
       if (scroll >= 50) {
-        $("#navbar").addClass("scrolled");
+        $("#navbar").addClass("navbar-scrolled");
       } else {
-        $("#navbar").removeClass("scrolled");
+        $("#navbar").removeClass("navbar-scrolled");
       }
   });
 });

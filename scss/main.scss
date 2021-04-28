@@ -85,11 +85,11 @@ a {
   width: 300px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  -webkit-animation: slide 0.5s forwards;
+  /*   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
   animation-delay: 2s;
-  transition: all 100ms linear;
+  transition: all 100ms linear; */
   display: flex;
   align-items: center;
   z-index: 99;
@@ -112,6 +112,14 @@ a {
   &:hover {
     transform: scale(1.05);
   }
+}
+
+.github-scrolled {
+  -webkit-animation: slide 0.5s forwards;
+  /* -webkit-animation-delay: 2s; */
+  animation: slide 0.5s forwards;
+  /* animation-delay: 2s; */
+  transition: all 100ms linear;
 }
 
 @-webkit-keyframes slide {
@@ -149,9 +157,9 @@ a {
   }
 }
 
-.scrolled {
+.navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.7);
-  transition: all 100ms linear;
+  transition: all 100ms line;
 }
 
 @keyframes initial-spin {
