@@ -188,62 +188,108 @@ a {
 #menuham {
   display: none;
   margin: 0 auto;
+  height: 75px;
+  /* ham icon */
 }
-#menuham .icon {
-  z-index: 5;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-#menuham ul {
-  margin: 0;
-  list-style-type: none;
-  text-align: center;
-  padding: 0px;
-  padding-top: 15px;
-  /*padding-top: 100px;*/
-  display: none;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
+#menuham .full-menu {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#menuham ul li .menuitem {
-  padding: 0px;
-  height: 15vh;
-}
-#menuham ul li .menuitem a {
-  font-size: 1.5em;
-  clear: both;
-  float: none;
-  display: block;
-  color: #fff;
-}
-#menuham input {
-  position: relative;
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  visibility: hidden;
   opacity: 0;
-  top: -75px;
+  transition: all 0.2s ease;
+}
+#menuham .full-menu.is-active {
+  background-color: black;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menuham .full-menu ul {
+  list-style: none;
+  opacity: 0;
+  transition: all 1s ease;
+  list-style: none;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+}
+#menuham .full-menu.is-active ul {
+  opacity: 1;
+}
+#menuham .full-menu ul li {
+  transition: all 1s ease;
+  text-transform: uppercase;
+  margin-top: 50px;
+  opacity: 0;
+  transition: all 1s ease;
+  text-align: center;
+}
+#menuham .full-menu ul li a {
+  margin-top: 50px;
+  font-size: 6vw;
+}
+#menuham .full-menu.is-active ul li {
+  opacity: 1;
+}
+#menuham .ham-icon {
+  position: fixed;
+  top: -5px;
   left: 50%;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  z-index: 6;
 }
-#menuham .menuhamicon {
-  display: block;
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
+#menuham .ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-#menuham .menuhamcross {
-  display: block;
-  height: 50px;
-  width: 50px;
-  margin: 0 auto;
+#menuham .hamRotate.is-active {
+  transform: rotate(45deg);
+}
+#menuham .hamRotate180.is-active {
+  transform: rotate(180deg);
+}
+#menuham .line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+#menuham .line.is-active {
+  stroke: #fff;
+}
+#menuham .ham8 .top {
+  stroke-dasharray: 40 160;
+}
+#menuham .ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+#menuham .ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+#menuham .ham8.is-active .top {
+  stroke-dashoffset: -64px;
+}
+#menuham .ham8.is-active .middle {
+  transform: rotate(90deg);
+}
+#menuham .ham8.is-active .bottom {
+  stroke-dashoffset: -64px;
 }
 
 /* header */

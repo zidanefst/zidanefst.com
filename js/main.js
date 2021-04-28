@@ -33,6 +33,21 @@ $('a[href*=\\#]').on('click', function(event){
     $('html,body').animate({scrollTop:$(this.hash).offset().top-100}, 500);
 });
 
+/* menuham is active class activation */
+
+$('.ham').on('click', function(){     
+  $(this).toggleClass('is-active');
+  $('.full-menu').toggleClass('is-active');
+  $('.line').toggleClass('is-active');
+});
+
+$('.menuitem-ham').on('click', function(){     
+  /* $('ham').removeClass('is-active');
+  $('.full-menu').toggleClass('is-active');
+  $('.line').toggleClass('is-active'); */
+  $("#menuham").find('.is-active').toggleClass("is-active");
+});
+
 /* github hide and show pop-up */
 $('.fa-times').on('click', function(){     
   $('#github').fadeOut();

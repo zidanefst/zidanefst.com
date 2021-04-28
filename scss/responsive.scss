@@ -32,22 +32,7 @@
   }
 
   #menuham {
-    padding: 10px;
     display: block;
-    .logo {
-      float: none;
-      margin: 0 auto;
-    }
-
-    input:checked ~ ul {
-      /*afeta o irmão (que está no mesmo nível numa div) do input*/
-      display: block;
-    }
-
-    input:checked ~ img {
-      /*afeta o irmão (que está no mesmo nível numa div) do input*/
-      opacity: 0;
-    }
   }
 
   /* header */
@@ -184,6 +169,12 @@
   #portfolio {
     .grid {
       grid-template-columns: 1fr;
+      .container .portfolio-image {
+        height: 200px;
+        img {
+          height: 200px;
+        }
+      }
     }
   }
 

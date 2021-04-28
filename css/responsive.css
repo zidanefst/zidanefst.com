@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media only screen and (max-width: 1024px) {
   h2 {
     padding: 30px;
@@ -28,20 +27,7 @@
   }
 
   #menuham {
-    padding: 10px;
     display: block;
-  }
-  #menuham .logo {
-    float: none;
-    margin: 0 auto;
-  }
-  #menuham input:checked ~ ul {
-    /*afeta o irmão (que está no mesmo nível numa div) do input*/
-    display: block;
-  }
-  #menuham input:checked ~ img {
-    /*afeta o irmão (que está no mesmo nível numa div) do input*/
-    opacity: 0;
   }
 
   /* header */
@@ -137,6 +123,12 @@
   /* portfolio */
   #portfolio .grid {
     grid-template-columns: 1fr;
+  }
+  #portfolio .grid .container .portfolio-image {
+    height: 200px;
+  }
+  #portfolio .grid .container .portfolio-image img {
+    height: 200px;
   }
 
   /* education */
