@@ -575,16 +575,15 @@ a {
   margin: 0 auto;
 }
 
-#copyright {
+.copyright {
   padding: 25px;
   padding-bottom: 50px;
 }
-
-#copyright p {
+.copyright p {
   text-align: center;
   margin: 10px auto;
 }
-#copyright p br {
+.copyright p br {
   display: none;
 }
 
