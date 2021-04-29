@@ -130,7 +130,7 @@ a {
   top: 0;
   height: 100px;
   width: 100%;
-  transition: all 100ms linear;
+  transition: all 400ms linear;
 }
 #navbar .logo {
   text-align: center;
@@ -147,7 +147,6 @@ a {
 
 .navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.7);
-  transition: all 100ms line;
 }
 
 @keyframes initial-spin {
@@ -568,6 +567,7 @@ a {
 #footerdivider img:hover {
   transition: 250ms linear;
   transform: scale(1.3) rotate(360deg);
+  cursor: pointer;
 }
 
 #footer {
