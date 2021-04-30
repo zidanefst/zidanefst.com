@@ -33,6 +33,14 @@ $('a[href*=\\#]').on('click', function(event){
     $('html,body').animate({scrollTop:$(this.hash).offset().top-100}, 500);
 });
 
+if($(window).width() < 1024)
+{
+  $('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top-75}, 500);
+});
+}
+
 /* menuham is active class activation */
 
 $('.ham').on('click', function(){     
