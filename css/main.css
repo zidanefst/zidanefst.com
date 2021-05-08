@@ -137,8 +137,9 @@ a {
   margin: auto;
 }
 #navbar .logo img {
-  transition: 400ms ease-out;
+  transition: 250ms ease-in-out;
   width: 75px;
+  margin-top: 12px;
 }
 #navbar .logo img:hover {
   transform: rotate(35deg);
