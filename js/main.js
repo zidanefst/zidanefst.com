@@ -41,6 +41,9 @@ if($(window).width() < 1024)
 });
 }
 
+/* TODO menu item active changes style to bold on scroll */
+
+
 /* menuham is active class activation */
 
 $('.ham').on('click', function(){     

@@ -142,27 +142,17 @@ a {
     text-align: center;
     margin: auto;
     img {
-      animation: initial-spin 0.5s backwards;
       transition: 400ms ease-out;
-      width: 100px;
+      width: 75px;
       &:hover {
-        transform: scale(1.3) rotate(360deg);
+        transform: rotate(35deg);
       }
     }
   }
 }
 
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-@keyframes initial-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 #menu {
@@ -184,7 +174,8 @@ a {
       border-bottom: solid 0px #000;
       transition: 100ms linear;
       &:hover {
-        font-size: 1.1em;
+        /* font-size: 1.1em; */
+        font-weight: 600;
         border-width: 2px;
       }
     }
@@ -630,7 +621,7 @@ a {
 
   &:hover {
     transition: 250ms linear;
-    transform: scale(1.3) rotate(360deg);
+    transform: scale(1.1) rotate(35deg);
     cursor: pointer;
   }
 }

@@ -137,26 +137,17 @@ a {
   margin: auto;
 }
 #navbar .logo img {
-  animation: initial-spin 0.5s backwards;
   transition: 400ms ease-out;
-  width: 100px;
+  width: 75px;
 }
 #navbar .logo img:hover {
-  transform: scale(1.3) rotate(360deg);
+  transform: rotate(35deg);
 }
 
 .navbar-scrolled {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-@keyframes initial-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #menu {
   margin: 0 auto;
   display: flex;
@@ -179,7 +170,8 @@ a {
   transition: 100ms linear;
 }
 #menu .menuitem a:hover {
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
+  font-weight: 600;
   border-width: 2px;
 }
 
@@ -566,7 +558,7 @@ a {
 }
 #footerdivider img:hover {
   transition: 250ms linear;
-  transform: scale(1.3) rotate(360deg);
+  transform: scale(1.1) rotate(35deg);
   cursor: pointer;
 }
 
