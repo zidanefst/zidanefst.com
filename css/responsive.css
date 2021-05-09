@@ -141,6 +141,11 @@
   }
 }
 @media only screen and (max-width: 540px) {
+  /* removing excessive .grid margin-top's */
+  .grid {
+    margin: 50px auto !important;
+  }
+
   /* github */
   #github {
     padding: 15px;
@@ -166,6 +171,9 @@
   }
   #skills .skill-type .grid {
     grid-template-columns: 1fr;
+  }
+  #skills .skill-type:last-of-type {
+    margin-bottom: 40px;
   }
 }
 
