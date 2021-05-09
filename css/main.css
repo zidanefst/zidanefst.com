@@ -132,18 +132,6 @@ a {
   width: 100%;
   transition: all 400ms linear;
 }
-#navbar .logo {
-  text-align: center;
-  margin: auto;
-}
-#navbar .logo img {
-  transition: 250ms ease-in-out;
-  width: 75px;
-  margin-top: 12px;
-}
-#navbar .logo img:hover {
-  transform: rotate(35deg);
-}
 
 .navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.9);
@@ -162,6 +150,7 @@ a {
   padding: 35px;
   display: inline-block;
   margin: 0 auto;
+  list-style-type: none;
 }
 #menu .menuitem a {
   text-decoration: none;
@@ -174,6 +163,19 @@ a {
   /* font-size: 1.1em; */
   font-weight: 600;
   border-width: 2px;
+}
+#menu .logo {
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+}
+#menu .logo img {
+  transition: 250ms ease-in-out;
+  width: 75px;
+  margin-top: 12px;
+}
+#menu .logo img:hover {
+  transform: rotate(35deg);
 }
 
 /*Menu Ham*/

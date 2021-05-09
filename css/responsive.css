@@ -105,7 +105,7 @@
     width: auto;
   }
 
-  #copyright p br {
+  .copyright p br {
     display: block;
   }
 }
