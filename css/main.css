@@ -160,7 +160,6 @@ a {
   transition: 100ms linear;
 }
 #menu .menuitem a:hover {
-  /* font-size: 1.1em; */
   font-weight: 600;
   border-width: 2px;
 }
