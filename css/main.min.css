@@ -1,77 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap);
 * {
   margin: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: rgba(0, 0, 0, 0.97);
   background-image: url(../img/bgpattern.png);
-  font-family: "Nunito", sans-serif;
-  font-weight: normal;
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
   font-size: 1.1em;
-  color: white;
+  color: #fff;
 }
-
 h2 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 400;
   background-color: #1f1f1f;
-  color: white;
+  color: #fff;
   padding: 30px;
   font-size: 3em;
   text-align: center;
 }
-
 a {
   text-decoration: none;
   color: #fff;
 }
-
-/* scrollbar */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
 }
-
 ::-webkit-scrollbar {
   width: 12px;
   background-color: rgba(0, 0, 0, 0);
 }
-
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #555;
 }
-
-/* loader */
-/* #stop-scrolling {
-    height: 100% !important;
-    overflow: hidden !important;
-}
-
-.preloader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom:0;
-    right:0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99999999;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-*/
-/* github */
 #github {
   background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
@@ -104,15 +75,11 @@ a {
 #github:hover {
   transform: scale(1.05);
 }
-
 .github-scrolled {
   -webkit-animation: slide 0.5s forwards;
-  /* -webkit-animation-delay: 2s; */
   animation: slide 0.5s forwards;
-  /* animation-delay: 2s; */
-  transition: all 100ms linear;
+  transition: all 0.1s linear;
 }
-
 @-webkit-keyframes slide {
   100% {
     right: 0;
@@ -123,20 +90,17 @@ a {
     right: 0;
   }
 }
-/* navbar */
 #navbar {
   z-index: 9999;
   position: fixed;
   top: 0;
   height: 100px;
   width: 100%;
-  transition: all 400ms linear;
+  transition: all 0.4s linear;
 }
-
 .navbar-scrolled {
   background-color: rgba(255, 255, 255, 0.9);
 }
-
 #menu {
   margin: 0 auto;
   display: flex;
@@ -154,13 +118,13 @@ a {
 }
 #menu .menuitem a {
   text-decoration: none;
-  color: black;
+  color: #000;
   padding: 5px;
-  border-bottom: solid 0px #000;
-  transition: 100ms linear;
+  border-bottom: solid 0 #000;
+  transition: 0.1s linear;
 }
 #menu .menuitem a:hover {
-  text-shadow: 0 0 0.5px black;
+  text-shadow: 0 0 0.5px #000;
   border-width: 2px;
 }
 #menu .logo {
@@ -176,16 +140,13 @@ a {
 #menu .logo img:hover {
   transform: rotate(35deg);
 }
-
-/*Menu Ham*/
 #menuham {
   display: none;
   margin: 0 auto;
   height: 75px;
-  /* ham icon */
 }
 #menuham .full-menu {
-  color: black;
+  color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +157,7 @@ a {
   transition: all 0.2s ease;
 }
 #menuham .full-menu.is-active {
-  background-color: black;
+  background-color: #000;
   opacity: 1;
   visibility: visible;
   display: flex;
@@ -240,7 +201,7 @@ a {
 #menuham .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
+  transition: transform 0.4s;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -254,7 +215,7 @@ a {
 }
 #menuham .line {
   fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 0.4s, stroke-dashoffset 0.4s;
   stroke: #000;
   stroke-width: 5.5;
   stroke-linecap: round;
@@ -268,12 +229,12 @@ a {
 #menuham .ham8 .middle {
   stroke-dasharray: 40 142;
   transform-origin: 50%;
-  transition: transform 400ms;
+  transition: transform 0.4s;
 }
 #menuham .ham8 .bottom {
   stroke-dasharray: 40 85;
   transform-origin: 50%;
-  transition: transform 400ms, stroke-dashoffset 400ms;
+  transition: transform 0.4s, stroke-dashoffset 0.4s;
 }
 #menuham .ham8.is-active .top {
   stroke-dashoffset: -64px;
@@ -284,13 +245,11 @@ a {
 #menuham .ham8.is-active .bottom {
   stroke-dashoffset: -64px;
 }
-
-/* header */
 #header {
   height: 100vh;
-  font-family: "Ubuntu", sans-serif;
+  font-family: Ubuntu, sans-serif;
   margin: 0 auto;
-  background-image: url("../img/headerbg.jpg");
+  background-image: url(../img/headerbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -301,7 +260,7 @@ a {
 }
 #header svg {
   margin-top: 40vh;
-  font-weight: bold;
+  font-weight: 700;
   width: 100%;
 }
 #header svg text {
@@ -313,13 +272,8 @@ a {
   font-size: 1.5em;
   color: #000;
   background-color: rgba(0, 0, 0, 0);
-  padding: 0px;
+  padding: 0;
 }
-
-/* about */
-/*#about {
-   background-color: rgb(222,232,235); 
-}*/
 #about .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -338,8 +292,6 @@ a {
   text-align: center;
   font-size: 24px;
 }
-
-/* experience */
 #experience {
   color: #000;
 }
@@ -359,14 +311,14 @@ a {
   grid-template-rows: 1fr 1fr;
   width: 90%;
   margin: 25px;
-  margin-top: 0px;
+  margin-top: 0;
   gap: 15px;
 }
 #experience .grid .container .position {
   font-size: 1.3em;
 }
-#experience .grid .container .position,
-#experience .grid .container .company {
+#experience .grid .container .company,
+#experience .grid .container .position {
   text-align: left;
   font-weight: bolder;
   text-transform: uppercase;
@@ -376,8 +328,6 @@ a {
   text-align: right;
   font-size: 16px;
 }
-
-/* skills */
 #skills .skill-type {
   background-color: #fff;
   color: #000;
@@ -399,7 +349,7 @@ a {
   display: flex;
   height: 100px;
   margin: auto;
-  transition: all 100ms linear;
+  transition: all 0.1s linear;
 }
 #skills .skill-type .grid img:hover {
   transform: scale(1.1);
@@ -412,8 +362,6 @@ a {
 #skills .skill-type:last-of-type {
   margin-bottom: 110px;
 }
-
-/* portfolio */
 #portfolio {
   color: #000;
 }
@@ -440,11 +388,11 @@ a {
   overflow: visible;
 }
 #portfolio .grid .container .portfolio-image:hover img {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   transform: scale(1.1);
 }
 #portfolio .grid .container .portfolio-image img {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   display: flex;
   height: 250px;
 }
@@ -454,27 +402,25 @@ a {
 #portfolio .grid .container .portfolio-desc .portfolio-title {
   margin-bottom: 15px;
   font-size: 1.3em;
-  font-weight: bold;
+  font-weight: 700;
 }
 #portfolio .grid .container .portfolio-desc a {
   margin: 10px auto;
-  color: black;
+  color: #000;
   text-decoration: underline;
-  transition: 100ms linear;
+  transition: 0.1s linear;
 }
 #portfolio .grid .container .portfolio-desc a i {
   font-size: 18px;
   padding-right: 10px;
 }
 #portfolio .grid .container .portfolio-desc a:hover {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   font-size: 1.2em;
 }
 #portfolio .grid .container .portfolio-desc a:hover i {
   transform: scale(1.2);
 }
-
-/* education */
 #education {
   color: #000;
 }
@@ -501,8 +447,6 @@ a {
 #education .grid .container p {
   margin: 4px auto;
 }
-
-/* contact */
 #contact #social {
   width: 250px;
   margin: 50px auto 100px auto;
@@ -511,7 +455,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: left;
-  transition: 100ms linear;
+  transition: 0.1s linear;
 }
 #contact #social .socialmedia a:hover {
   font-size: 1.1em;
@@ -520,39 +464,35 @@ a {
   transform: scale(1.3);
 }
 #contact #social .socialmedia a:hover .fa-behance {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   color: #1769ff;
 }
 #contact #social .socialmedia a:hover .fa-linkedin {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   color: #0077b5;
 }
 #contact #social .socialmedia a:hover .fa-instagram {
-  transition: 100ms linear;
+  transition: 0.1s linear;
   color: #dd2a7b;
 }
 #contact #social .socialmedia i {
   font-size: 36px;
   padding: 24px;
-  transition: 100ms linear;
+  transition: 0.1s linear;
 }
-
-/*footer*/
 #footerdivider {
   margin: 0 auto;
   width: 80%;
   display: grid;
   grid-template-columns: 16fr 1fr 16fr;
 }
-
 #footerdivider .line {
   height: 0;
   border: 1px solid #c4c4c4;
   display: inline-block;
 }
-
 #footerdivider img {
-  padding: 0px 20px;
+  padding: 0 20px;
   margin-top: -35px;
   width: 75px;
   filter: invert(100%);
@@ -563,12 +503,10 @@ a {
   transform: scale(1.1) rotate(35deg);
   cursor: pointer;
 }
-
 #footer {
   width: 80%;
   margin: 0 auto;
 }
-
 .copyright {
   padding: 25px;
   padding-bottom: 50px;
@@ -580,8 +518,6 @@ a {
 .copyright p br {
   display: none;
 }
-
-/* ongoing.html */
 #ongoing {
   background-image: url(../img/ongoingbg.png);
   width: 100vw;
@@ -596,7 +532,7 @@ a {
 }
 #ongoing h3,
 #ongoing h4 {
-  font-weight: normal;
+  font-weight: 400;
 }
 #ongoing a {
   text-decoration: underline;
@@ -604,48 +540,37 @@ a {
 #ongoing a i {
   text-decoration: none;
 }
-
 @media only screen and (max-width: 1024px) {
   h2 {
     padding: 30px;
     font-size: 2em;
   }
-
-  /* github */
   #github span {
     display: none;
   }
-
-  /* navbar */
   #navbar {
     height: 75px;
   }
   #navbar .menuitem a {
-    border-bottom: solid 0px #fff;
-    transition: 100ms linear;
+    border-bottom: solid 0 #fff;
+    transition: 0.1s linear;
   }
   #navbar .menuitem a:hover {
     font-size: 1.6em;
     border-width: 2px;
   }
-
   #menu {
     display: none;
   }
-
   #menuham {
     display: block;
   }
-
-  /* header */
   #header .animation {
     width: auto;
   }
   #header svg text {
     font-size: 16px;
   }
-
-  /* about */
   #about .grid {
     grid-template-columns: 1fr;
     width: auto;
@@ -657,12 +582,10 @@ a {
   #about p {
     width: 80%;
     margin: 0 auto;
-    padding: 0px 0px 25px 0px;
+    padding: 0 0 25px 0;
     text-align: center;
     font-size: 24px;
   }
-
-  /* experience */
   #experience .grid {
     grid-template-columns: 1fr;
     width: 80%;
@@ -675,16 +598,14 @@ a {
     grid-template-rows: auto auto;
     width: 90%;
   }
-  #experience .grid .container .position,
-  #experience .grid .container .company {
+  #experience .grid .container .company,
+  #experience .grid .container .position {
     text-align: left;
   }
   #experience .grid .container .date,
   #experience .grid .container .location {
     text-align: left;
   }
-
-  /* skills */
   #skills .skill-type {
     width: 70%;
     padding: 40px;
@@ -695,14 +616,10 @@ a {
   #skills .skill-type .grid img {
     height: 75px;
   }
-
-  /* portfolio */
   #portfolio .grid {
     grid-template-columns: 1fr;
     width: 90%;
   }
-
-  /* education */
   #education .grid {
     grid-template-columns: 1fr;
     width: 80%;
@@ -711,23 +628,17 @@ a {
   #education .grid .container {
     width: auto;
   }
-
   .copyright p br {
     display: block;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* experience */
   #experience .grid {
     width: 90%;
   }
-
-  /* skills */
   #skills .skill-type {
     width: 80%;
   }
-
-  /* portfolio */
   #portfolio .grid {
     grid-template-columns: 1fr;
   }
@@ -737,8 +648,6 @@ a {
   #portfolio .grid .container .portfolio-image img {
     height: 200px;
   }
-
-  /* education */
   #education .grid {
     width: 90%;
     gap: 50px;
@@ -748,31 +657,21 @@ a {
   }
 }
 @media only screen and (max-width: 540px) {
-  /* removing excessive .grid margin-top's */
   .grid {
     margin: 50px auto !important;
   }
-
-  /* github */
   #github {
     padding: 15px;
   }
-
-  /* experience */
   #experience .grid .container .grid {
-    margin-left: 0px;
+    margin-left: 0;
   }
-
   #experience .grid .container ul {
     padding-inline-start: 20px;
   }
-
-  /* education */
   #education .grid .container ul {
     padding-inline-start: 20px;
   }
-
-  /* skills */
   #skills .skill-type {
     width: 65%;
   }
@@ -783,5 +682,3 @@ a {
     margin-bottom: 40px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
