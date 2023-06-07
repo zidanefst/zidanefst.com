@@ -425,10 +425,6 @@ a {
         height: 100px;
         margin: auto;
         transition: all 100ms linear;
-
-        &:hover {
-          transform: scale(1.1);
-        }
       }
 
       p {

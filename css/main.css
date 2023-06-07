@@ -401,9 +401,6 @@ a {
   margin: auto;
   transition: all 100ms linear;
 }
-#skills .skill-type .grid img:hover {
-  transform: scale(1.1);
-}
 #skills .skill-type .grid p {
   margin-top: 25px;
   font-size: 1.1em;
